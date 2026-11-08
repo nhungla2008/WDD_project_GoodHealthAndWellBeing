@@ -20,22 +20,22 @@ The repository will be used to organise and maintain the website project as it p
 
 Further updates, website files and documentation will be added as the project develops.
 
-Website Structure and Page Concepts
+Website Structure and Main Page Concepts
 
-Home Page
+1. Home Page
 The main landing page will introduce visitors to the website and explain its purpose. It will provide an overview of good health and well-being, highlight relevant health statistics and news, and encourage visitors to explore the different sections of the website.
 
-Mental Health
+2. Mental Health
 This page will focus on mental well-being and common mental health challenges, including stress, anxiety, loneliness, burnout and excessive screen time. It will also explore practical ways to improve mental health, such as mindfulness, journaling, meditation, prayer and maintaining healthy relationships.
 
-Physical Health
+3. Physical Health
 This page will explore the importance of maintaining physical health through regular exercise, physical activity and balanced nutrition. It will provide information about healthy eating habits, the benefits of exercise and common challenges people face when trying to maintain a healthy lifestyle.
 
-Lifestyle
+4. Lifestyle
 This page will examine how everyday habits and decisions influence overall health and well-being. Topics will include sleep, relationships, friendships and recreational activities, highlighting the importance of maintaining a balanced lifestyle.
 
-About Us
+5. About Us
 This page will introduce the group behind the project, explain the purpose of the website and identify the sources used to research the information presented.
 
-Get Help / Useful Resources
+6. Get Help / Useful Resources
 This page will provide visitors with access to useful health information, external support services and relevant contact details. It may also include a contact form to allow visitors to get in touch.
