@@ -1,165 +1,153 @@
 <!--mental health.html - kacper okiki-->
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
-		<title> Mental Health </title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="styles.css">
-		<!-- fonts-->
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,400;0,700;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-			<!--BOOSTRAP-->
-
-		</head>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+		<title>Home Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Kacper Okiki">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/base.css">
+			<link rel="stylesheet" href="css/mental.css">
+		<script src="js/script.js"></script>
+	</head>
 	<body>
-	<!-- javascript boostrap -->
-	    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-
+	<div class="Mental-health">
+			<!-- This is navbar and it should look the same on every page -->
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">SDG-3</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Home Page</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="mental.html">Mental health</a>
+							</li>
+							<li class="nav-item dropdown"> <!-- This means Physical Health part is actually 2 pages: Exercise and Diet as the wireframe -->
+								<a class="nav-link dropdown-toggle active" href="physical.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Physical health
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="exercise.html">Exercise</a></li>
+									<li><a class="dropdown-item" href="diet.html">Diet</a></li>
+									<li><hr class="dropdown-divider"></li>
+						
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="lifestyle.html">Lifestyle</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="about.html">About us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="help.html">Get Help</a>
+							</li>
+						</ul>
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+			
+		</section> 
 		
-	<!--nav bar (should be on every page-->
-	<section class="sec1-navbar"> <!--Translucent navbar -->
-						<!-- This is navbar and it should look the same on every page -->
-					
-<!-- Navigation bar -->
-<section class="sec1-navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-
-            <a class="navbar-brand" href="index.html">
-				SDG-3
-            </a>
-
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse"
-                id="navbarSupportedContent">
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="physical.html">Physical Health</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="mental.html">Mental Health</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="help.html">Help</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="lifestyle.html">Lifestyle</a>
-                    </li>
-
-                </ul>
-
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"/>
-
-                    <button class="btn btn-outline-success" type="submit">
-                        Search
-                    </button>
-                </form>
-
-            </div>
-        </div>
-    </nav>
-</section>
-
+		<section class="section2">	<!-- hero section -->
+				<header>
+				<div class="container text-center">
+				  <div class="row">
+				  <!--hero text-->
+					<div class="col">
+					  Column
+					</div>
+					<!-- Photo to represent mental health -->
+					<div class="col">
+						<img src="images/mentalhealth.jpg" class="rounded float-end" alt="mental health picture representation" style="width:550px;height:550px;">
+					</div>
+				  </div>
+				</div>
+				</header>
+			
+		</section>
 		
-	</section> 
-	
-	<section class="section2">	<!-- hero section -->
-			<header>
+		<div class="Pop-Out">
+			<span class="line"></span>
+
+				<h1>TAKE BACK YOUR MIND</h1>
+
+			<span class="line"></span>
+		</div>
+		<section class="section3"> <!-- (take back your mind) cards to see each struggle people can deal with-->
+			<div class="container text-center">
+			  <div class="row row-cols-4">
+				<div class="col">Column</div>
+				<div class="col">Column</div>
+				<div class="col">Column</div>
+				<div class="col">Column</div>
+				<div class="col">Column</div>
+				<div class="col">Column</div>
+			  </div>
+			</div>
+
+		</section>
+		<div class="Pop-Out">
+		</div>
+		<section class="section4"> <!--6 habits to master that mind -->
 			<div class="container text-center">
 			  <div class="row">
-			  <!--hero text-->
 				<div class="col">
 				  Column
 				</div>
-				<!-- Photo to represent mental health -->
 				<div class="col">
-					<img src="images/mentalhealth.jpg" class="rounded float-end" alt="mental health picture representation" style="width:550px;height:550px;">
+				  Column
+				</div>
+				<div class="col">
+				  Column
+				</div>
+					<div class="col">
+				  Column
+				</div>
+				<div class="col">
+				  Column
+				</div>
+				<div class="col">
+				  Column
 				</div>
 			  </div>
 			</div>
-			</header>
+		</section>
+			
+
+			<!--universal footer should be-->
+		<!-- The footer for sources, copyright, disclaimer or author line -->
+			<footer>
+				<div class ="footer site">
+					<div class="row1-footer">
+						<div class="col-md-6">
+							<p>Page by: Kacper Okki</p>
+						</div>
+						<div class="col-md-6">
+							<p>The site is educational and not medical advice.</p>
+						</div>
+					</div>
+					<div class="row2-footer">
+						<div class="col-md-6">
+							<p>Sources</p>
+						</div>
+					<p class="text-center mb-0">&copy; Copyright</p>
+					</div>
+				</div>
+			</footer>
 		
-	</section>
-	
-	<div class="Pop-Out">
-		<span class="line"></span>
-
-			<h1>TAKE BACK YOUR MIND</h1>
-
-		<span class="line"></span>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
 	</div>
-	<section class="section3"> <!-- (take back your mind) cards to see each struggle people can deal with-->
-		<div class="container text-center">
-		  <div class="row row-cols-4">
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-		  </div>
-		</div>
+		</body>
 
-	</section>
-	<div class="Pop-Out">
-	</div>
-	<section class="section4"> <!--6 habits to master that mind -->
-		<div class="container text-center">
-		  <div class="row">
-			<div class="col">
-			  Column
-			</div>
-			<div class="col">
-			  Column
-			</div>
-			<div class="col">
-			  Column
-			</div>
-				<div class="col">
-			  Column
-			</div>
-			<div class="col">
-			  Column
-			</div>
-			<div class="col">
-			  Column
-			</div>
-		  </div>
-		</div>
-	</section>
-		
-
-		<!--universal footer should be-->
-	<footer> 
-	</footer>
-	</body>	
 </html>
