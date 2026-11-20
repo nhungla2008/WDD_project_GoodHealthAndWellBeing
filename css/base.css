@@ -1,0 +1,88 @@
+/*
+		PUT THESE IN THE HEAD OF EVERY PAGE FOR THE FONTS
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+*/
+
+/* 
+this is the foundation css for every webpage 
+*/
+
+/* ROOT DECLARES THE GLOBAL VARIABLE fyi*/
+/* VAR = VARIABLE WHICH REFERENCES WHICHEVER GLOBAL VARIABLE */
+
+
+
+/* =================================
+   1. GLOBAL COLOUR VARIABLES
+================================= */
+
+
+:root {
+     /* Main website colours */
+    --primary-color: #285337;
+    --secondary-color: #8DA750;
+    --accent-color: #E4EB9C;
+
+    /* Page-specific accents */
+    --mental-accent: #7398BD;
+    --physical-accent: #D97955;
+    --lifestyle-accent: #A4B878;
+
+    /* Neutral colours */
+    --text-color: #333333;
+    --background-color: #F5F0E6;
+    --white: #FFFFFF;
+    --light-grey: #D9D9D9;
+
+body {
+    background-color: var(--background-color);
+}
+
+/* =================================
+   2. CSS RESET THE FOUNDATION INNIT!!!
+================================= */
+
+* /*UNIVERSAL SELECTION WHICH IS COOL*/ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+}
+
+
+/* =================================
+   3. GLOBAL TYPOGRAPHY
+================================= */
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* =================================
+   4. GLOBAL NAVIGATION -> DOESNT NEED TO MUUCH WORK CUZ WE BOOTSRTAP!!1
+================================= */
+
+
+/* =================================
+   5. GLOBAL BUTTONS 
+================================= */
+
+/* =================================
+   6. GLOBAL FOOTER
+================================= */
+
+/* =================================
+   7. GLOBAL GENERAL SPACING 
+================================= */
+
+
+/* =================================
+   8. GLOBAL CONTAINERS THAT CAN BE REUSED AWEOSMLY.
+================================= */

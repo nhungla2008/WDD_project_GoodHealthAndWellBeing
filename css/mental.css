@@ -1,1 +1,64 @@
 /* kacper css */
+
+
+/* =================================
+   1. HERO SECTION OF COOLNESS
+================================= */
+
+
+.page-mental .hero {
+
+    /* Makes the hero fill the screen below
+       the navigation bar */
+    min-height: calc(100vh - 56px);
+
+    /* Displays the mental health image */
+    background-image: url("../images/mentalhealth.jpg");
+    background-position: left center;
+    display: flex;
+    align-items: center;     
+    padding: 80px 8%;	
+
+
+/* Styles the main hero heading */
+.page-mental .hero h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+	
+}
+
+
+/* Styles the hero row background */
+.page-mental .hero .row {
+    background-color: var(--mental-accent);
+}
+}
+/* =================================
+   2. MENTAL HEALTHS !CHALLENGES! CARDS
+================================= */
+
+
+
+/* =================================
+  3. 6 HABITUAL HABITS SECTION!
+================================= */
+
+
+
+/* =================================
+  4. MENTAL HEALTH IMAGERY SECTION 
+================================= */
+
+/* =================================
+   5. CALL TO ACTION! 
+================================= */
+
+
+/* =================================
+   6. PAGE SPECIFIC LAYOUTS
+================================= */
+
+
+/* =================================
+   7. WE'LL FIGURE THIS OUT LATER, PROLLY GON BE THE RESPONSIVE PART.
+================================= */
