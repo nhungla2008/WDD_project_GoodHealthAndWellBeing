@@ -34,7 +34,7 @@
 								<a class="nav-link active" aria-current="page" href="mental.html">Mental health</a>
 							</li>
 							<li class="nav-item dropdown"> <!-- This means Physical Health part is actually 2 pages: Exercise and Diet as the wireframe -->
-								<a class="nav-link dropdown-toggle active" href="physical.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<a class="nav-link dropdown-toggle" href="physical.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 									Physical health
 								</a>
 								<ul class="dropdown-menu">
@@ -77,64 +77,91 @@
 			
 		</section>
 		
+	
+		<!--THE SEPERATOR BETWEEN LINE BETWEEN PAGES -->
 			<div class="Pop-Out">
 				<span class="line"></span>
-
-					<h2>TAKE BACK YOUR MIND</h2>
-
+				<h2>THE FIRST STEP</h2>
 				<span class="line"></span>
 			</div>
-			
 		
-		<section class="challenges"> <!-- (take back your mind) cards to see each struggle people can deal with-->
-			  <div class="container">
-				<div class="row row-cols-1 row-cols-lg-3 g-4 "> <!-- boostrap line-->
+		<!-- the intro after the line lil overview -->
+			<section class="mental-intro">
+					<div class="container">
+						<div class="row align-items-start">
 
-					<div class="col">
-						<div class="card card-body h-100"> <!-- adds padding and also draws the border-->
-							<h3 class="card-title">Anxiety</h3>
-							<p class="card-text">Constant worry that is hard to switch off.</p>
+							<!-- Left column -->
+							<div class="col-lg-6">
+								<h2>TAKE BACK YOUR MIND</h2>
+							</div>
+
+							<!-- Right column -->
+							<div class="col-lg-6">
+								<p>
+									Mental health is an essential part of our
+									overall well-being. Understanding the
+									challenges we face and developing healthy
+									habits can help us build resilience,
+									strengthen relationships and improve
+									our quality of life.
+								</p>
+
+								<div class="intro-buttons">
+									<a href="#challenges">UNDERSTAND</a>
+									<a href="#habits">BUILD HEALTHY HABITS</a>
+								</div>
+							</div>
+
 						</div>
 					</div>
-					
-					<div class="col">
-						<div class="card card-body h-100"> 
-							<h3 class="card-title">Stress</h3>
-							<p class="card-text">"The greatest weapon against stress is our ability to choose one thought over another."</p>
-						</div>
-					</div>
-					
-					<div class="col">
-						<div class="card card-body h-100"> 
-							<h3 class="card-title">Loneliness</h3>
-							<p class="card-text">Distancing &amp; Isolation pains the human mind</p>
-						</div>
-					</div>
-					
-					<div class="col">
-						<div class="card card-body h-100"> 
-							<h3 class="card-title">Negative Thinking</h3>
-							<p class="card-text">"as a man thinketh in his heart, so is he"</p>
-						</div>
-					</div>
-					
-					<div class="col">
-						<div class="card card-body h-100"> 
-							<h3 class="card-title">Media Overconsumption</h3>
-							<p class="card-text">Too often too much social media and the latest internet trends drain us and erode us of creativity, drive, peace of mind and sense of purpose.</p>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</section>
+				</section>
 		
+			<section class="challenges" id="challenges">
+
+			<div class="container">
+
+				<!-- Section introduction -->
+				<div class="challenges-intro">
+					<h2>THE CHALLENGES</h2>
+					<p>
+						Everyone experiences mental health challenges differently.
+						Understanding these challenges is an important first step
+						towards improving our well-being.
+					</p>
+				</div>
+
+				<!-- Challenge grid -->
+				<div class="row row-cols-1 row-cols-lg-2 g-5">
+
+					<!-- Challenge 1 -->
+					<div class="col">
+						<div class="challenge-item">
+
+							<div class="challenge-number">
+								01
+							</div>
+
+							<div class="challenge-content">
+								<h3>Anxiety</h3>
+								<p>
+									Constant worry that can be difficult to switch off.
+								</p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+</section>
 		
 		<div class="Pop-Out">
 		</div>
 		
 		
-		<section class="habits"> <!--6 habits to master that mind -->
+		<section class="habits" id="habits"> <!--6 habits to master that mind -->
 			<div class="container">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"> <!-- bootstrap line using very similar to previous line -> this also changes the shape based on device-->
 					<div class="col">

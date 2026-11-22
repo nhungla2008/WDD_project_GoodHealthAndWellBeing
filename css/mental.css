@@ -10,7 +10,7 @@
 
     /* Makes the hero fill the screen below
        the navigation bar */
-    min-height: calc(100vh - 56px);
+    min-height: calc(100vh - 26px);
 
     /* Displays the mental health image */
     background-image: url("../images/mentalhealth.jpg");
@@ -18,12 +18,13 @@
     display: flex;
     align-items: center;     
     padding: 80px 8%;	
-
+}
 
 /* Styles the main hero heading */
 .page-mental .hero h1 {
-    font-size: 5.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
+	align-items: center-right;
 	
 }
 
@@ -32,11 +33,139 @@
 .page-mental .hero .row {
     background-color: var(--mental-accent);
 }
-}
+
 /* =================================
-   2. MENTAL HEALTHS !CHALLENGES! CARDS
+   2. MENTAL HEALTH INTRODUCTION
 ================================= */
 
+.page-mental .mental-intro {
+    background-color: -var(--primary-color);
+    padding: 120px 0;
+    min-height: calc(100vh);
+
+}
+
+/* Left column heading */
+.page-mental .mental-intro h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 25px;
+	white-space: nowrap;
+}
+
+/* Right column paragraph */
+.page-mental .mental-intro p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 50px;
+	margin-left: 50px;
+}
+
+/* Action buttons container */
+.page-mental .intro-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Individual action buttons */
+.page-mental .intro-buttons a {
+    display: inline-block;
+    padding: 15px 22px;
+    border: 2px solid var(--mental-accent);
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.3s ease;
+	
+}
+
+/* Button hover effect */
+.page-mental .intro-buttons a:hover {
+    background-color: var(--mental-accent);
+    color: #FFFFFF;
+}
+
+/* =================================
+   RESPONSIVE INTRODUCTION
+================================= */
+
+@media (max-width: 768px) {
+
+    .page-mental .mental-intro {
+        padding: 70px 0;
+    }
+
+    .page-mental .mental-intro h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .page-mental .mental-intro p {
+        font-size: 1rem;
+    }
+
+    .page-mental .intro-buttons {
+        flex-direction: column;
+    }
+
+    .page-mental .intro-buttons a {
+        text-align: center;
+    }
+}
+
+/* =================================
+   2.5. MENTAL HEALTHS !CHALLENGES! CARDS
+================================= */
+.page-mental .Pop-Out {
+	    display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 25px;
+		padding: 60px;
+	
+}
+.page-mental .Pop-Out h2{
+	margin: 0;
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	
+}
+
+.page-mental .Pop-Out .line {
+	
+    width: 100px;    /* Sets line width */
+
+
+    height: 3px;    /* Sets line thickness */
+
+    background-color: var(--mental-accent);
+    flex-shrink: 0;    /* Stops Flexbox from shrinking the lines */
+
+}
+
+.page-mental .challenges .card {
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.page-mental .challenges .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.page-mental .challenges .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
 
 
 /* =================================
@@ -62,3 +191,16 @@
 /* =================================
    7. WE'LL FIGURE THIS OUT LATER, PROLLY GON BE THE RESPONSIVE PART.
 ================================= */
+
+.img-fluid.rounded{ /* Introduction photo */
+	width:550px;
+	height:550px
+}
+
+.page-mental .hero { /* hero section */
+	}
+	
+.page-mental .challenges { /* 5 challenges section */
+
+	}
+	

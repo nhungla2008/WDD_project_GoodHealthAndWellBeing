@@ -37,7 +37,7 @@ this is the foundation css for every webpage
 
 body {
     background-color: var(--background-color);
-}
+}}
 
 /* =================================
    2. CSS RESET THE FOUNDATION INNIT!!!
@@ -48,7 +48,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-}
+
 
 
 /* =================================
@@ -85,4 +85,4 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =================================
    8. GLOBAL CONTAINERS THAT CAN BE REUSED AWEOSMLY.
-================================= */
+   ================================= */
