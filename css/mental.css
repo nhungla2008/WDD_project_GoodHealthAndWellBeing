@@ -39,7 +39,7 @@
 ================================= */
 
 .page-mental .mental-intro {
-    background-color: -var(--primary-color);
+    background-color: var(--primary-color);
     padding: 120px 0;
     min-height: calc(100vh);
 
@@ -96,29 +96,6 @@
    RESPONSIVE INTRODUCTION
 ================================= */
 
-@media (max-width: 768px) {
-
-    .page-mental .mental-intro {
-        padding: 70px 0;
-    }
-
-    .page-mental .mental-intro h2 {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-    }
-
-    .page-mental .mental-intro p {
-        font-size: 1rem;
-    }
-
-    .page-mental .intro-buttons {
-        flex-direction: column;
-    }
-
-    .page-mental .intro-buttons a {
-        text-align: center;
-    }
-}
 
 /* =================================
    2.5. MENTAL HEALTHS !CHALLENGES! CARDS
@@ -151,56 +128,443 @@
 
 }
 
-.page-mental .challenges .card {
+/* The actual cards below taking backing your minds. */
+
+
+
+.page-mental .challenge-item {
     padding: 20px;
-    border-radius: 10px;
     height: 100%;
+	font-size: 1.5rem;
+    font-weight: 700;
+	align-items: center;
+	display: flex; /* arranges this horintally with the actual content so the square doesnt take up the whole block but is in relative size with the rest of contet (very good)  */
+    gap: 20px; /* i realize this is important to make the content neater in between each other */
 }
 
-.page-mental .challenges .card-title {
+.page-mental .challenge-number {
+	background-color: var(--mental-accent);
+	color:white;
+	padding: 5px;
+	min-width: 56px;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 10px;
+
+}
+
+.page-mental .challenge-content {
+    flex: 1;
+}
+
+.page-mental .challenges-intro h2{
+font-family: 'Lato', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 25px;
+	white-space: nowrap;
+	}
+.page-mental .challenge-content h3 {
+    font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+	padding-top: 15px;
 }
 
-.page-mental .challenges .card-text {
+.page-mental .challenge-content p {
+    font-family: 'Manrope', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
+    margin: 0;
+}
+
+/*Spacing and Borders*/
+.page-mental .challenge-item {
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--light-grey);
+}
+.page-mental .challenges .container{
+	margin: 100px;
+	padding-left: 50px;
 }
 
 
 /* =================================
   3. 6 HABITUAL HABITS SECTION!
 ================================= */
+.page-mental .habits-intro {
+    margin-bottom: 60px;
+}
+.page-mental .habits {
+	background-color: -var(--primary-color);
+    padding: 120px;
+    min-height: calc(100vh);
+	gap: 30px;
+	
+	
+}
+.page-mental .habits h2{
+	font-family: 'Lato', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 25px;
+	white-space: nowrap;
+}
+.page-mental .habits-intro p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 700px;
+}
 
+.page-mental .habit-item { /* THE FLIPPING ICONS THAT ARE LWKY COOL */
+    display: flex;
+    align-items: center;
+	padding: 25px;
+	gap: 25px; /* puts a gap between the text and the icon */
+}
+.page-mental .habit-icon {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    border-radius: 50%; /* 50% percent makes it an actual circle */
+    background-color: var(--mental-accent);
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-/* =================================
-  4. MENTAL HEALTH IMAGERY SECTION 
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+.page-mental .habit-content {
+    flex: 1;
+}
+
+.page-mental .habit-content h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.page-mental .habit-content p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*==================================
+ 4. TALK TO SOMEONE YOU TRUST
 ================================= */
 
+.page-mental .social-issue {
+    background-color: var(--mental-accent);
+    padding: 100px ;
+	min-height: calc(100vh);
+	padding-top: 100px;
+}
+
+.page-mental .social-issue h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+}
+
+.page-mental .social-issue p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #FFFFFF;
+}
+
+/*right colum */ 
+.page-mental .social-content {
+    padding: 55px;
+    height: 100%;
+	
+}
+
+.page-mental .social-content h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.page-mental .social-content h3.tuff {
+	 font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+	
+}
+
+
+
+
+.page-mental .social-content ul {
+    padding-left: 20px;
+}
+
+.page-mental .social-content li {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* ENCOURAGEMENT FOR THE WIN */
+
+.page-mental .encouragement {
+    background-color: var(--mental-accent);
+    padding: 35px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-mental .encouragement-label {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+}
+
+.page-mental .encouragement h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+.page-mental .encouragement h3 span {
+    display: block; /* forces on a new line */
+    color: var(--accent-color);
+}
+
+.page-mental .encouragement p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+.page-mental .encouragement button {
+    margin-top: 25px;
+    padding: 13px 22px;
+    background-color: #FFFFFF;
+    color: var(--text-color);
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.page-mental .encouragement button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Animation */
+.page-mental .encouragement.animate {
+    animation: reminderPulse 0.6s ease;
+}
+
+@keyframes reminderPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 /* =================================
    5. CALL TO ACTION! 
 ================================= */
+.page-mental .cta {
+	 background-color: var(--background-color);
+	 padding: 100px 0;
+	 text-align: center;
+}
+.page-mental .cta-title {
+	font-family: 'Lato', sans-serif;
+	font-size: 3.5rem;
+	font-weight: 900;
+	line-height: 1.2; 
+	color: var(--text-color);
+	max-width: 1270px;
+	margin: 0 auto 25px;
+}
 
+.page-mental .cta-text {
+	font-family: 'Manrope', sans-serif;
+	font-size: 1.3rem;
+	color: var(--text-color);
+	margin-bottom: 35px;
+	padding: 50px;
+	
+}
 
+.page-mental .cta-buttons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.page-mental .cta-buttons a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.page-mental .cta-primary {
+    background-color: #FFFFFF;
+    color: var(--text-color);
+    border: 2px solid #FFFFFF;
+}
+
+.page-mental .cta-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+	color: #FFFFFF;
+}
+
+.page-mental .cta-secondary {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.page-mental .cta-secondary:hover {
+    background-color: var(--mental-accent);
+    color: var(--text-color);
+    transform: translateY(-3px);
+}
 /* =================================
-   6. PAGE SPECIFIC LAYOUTS
+   6. FOOTER ! (FINALLY'WERE DONE BRO
 ================================= */
 
+.page-mental .site-footer {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: 45px 25px 20px;
+	
+}
+
+.page-mental .site-footer h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.page-mental .site-footer p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.page-mental .site-footer hr {
+    border-color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.page-mental .copyright {
+    text-align: center;
+    margin-bottom: 0;
+}
 
 /* =================================
    7. WE'LL FIGURE THIS OUT LATER, PROLLY GON BE THE RESPONSIVE PART.
 ================================= */
 
-.img-fluid.rounded{ /* Introduction photo */
-	width:550px;
-	height:550px
+/* intro responsiveness*/
+@media (max-width: 768px) {
+
+    .page-mental .mental-intro {
+        padding: 70px 0;
+    }
+
+    .page-mental .mental-intro h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .page-mental .mental-intro p {
+        font-size: 1rem;
+    }
+
+    .page-mental .intro-buttons {
+        flex-direction: column;
+    }
+
+    .page-mental .intro-buttons a {
+        text-align: center;
+    }
 }
 
-.page-mental .hero { /* hero section */
-	}
-	
-.page-mental .challenges { /* 5 challenges section */
+/* responsive social issue part */
+@media (max-width: 768px) {
+    .page-mental .social-issue {
+        padding: 60px 0;
+    }
 
-	}
-	
+    .page-mental .social-issue h2 {
+        font-size: 2.3rem;
+    }
+
+    .page-mental .social-issue p {
+        font-size: 1rem;
+    }
+
+    .page-mental .social-content {
+        padding: 25px;
+    }
+}
+
+/* CTA RESPOSNIVE NESS */
+@media (max-width: 768px) {
+
+    .page-mental .cta {
+        padding: 65px 0;
+    }
+
+    .page-mental .cta-title {
+        font-size: 2.3rem;
+    }
+
+    .page-mental .cta-text {
+        font-size: 1.1rem;
+    }
+
+    .page-mental .cta-buttons {
+        flex-direction: column;
+    }
+
+    .page-mental .cta-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}

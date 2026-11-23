@@ -34,10 +34,11 @@ this is the foundation css for every webpage
     --background-color: #F5F0E6;
     --white: #FFFFFF;
     --light-grey: #D9D9D9;
+}
 
 body {
     background-color: var(--background-color);
-}}
+}
 
 /* =================================
    2. CSS RESET THE FOUNDATION INNIT!!!
@@ -85,4 +86,4 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =================================
    8. GLOBAL CONTAINERS THAT CAN BE REUSED AWEOSMLY.
-   ================================= */
+================================ */
