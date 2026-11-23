@@ -103,21 +103,65 @@
 					<div class="form2">
 						<form id="getHelp">
 							<h4> Consultation Request </h4>
-							<label>Full name</label>
-							
-							<label>Email address</label>
-							
-							<label>Age</label>
-							
-							<label>Phone number</label>
-							
-							
-							
+							<div class="form-row">
+								<div class="form-group">
+									<label for="first-name">Name</label>
+									<input type="text" id="first-name" name="last_name" placeholder="First" />
+								</div>
+								<div class="form-group">
+									<label for="last-name" style="visibility: hidden;">Last Name</label>
+									<input type="text" id="last-name" name="last_name" placeholder="Last" />
+								</div>
+							</div>
+							<div class="form-group full-width">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email">
+							</div>
+							<div class="form-row">
+								<div class="form-group">
+									<label for="age">Age</label>
+									<input type="number" id="age" name="age">
+								</div>
+								<div class="form-group">
+									<label for "sex">Sex</label>
+									<select id="sex" name="sex">
+										<option value="">--Select--</option>
+										<option value="male">Male</option>
+										<option value="female">Female</option>
+										<option value="other">Other</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group full-width">
+								<label for="phone">Phone number</label>
+								<div class="phone-container">
+								<select name="country_code">
+									<option value="+353">(+353)</option>
+									<option value="+84">(+44)</option>
+								</select>
+								<input type="tel" id="phone" name="phone_number">
+								</div>
+							</div>
+							<div class="form-group full-width">
+								<label for="address">Address</label>
+								<input type="text" id="address" name="address" />
+							</div>
+							<div class="form-row">
+								<div class="form-group">
+									<label for="eircode">Eircode</label>
+									<input type="text" id="eircode" name="eircode" style="max-width: 200px;">
+								</div>
+								<div class="form-group"></div>
+							</div>
+							<div class="submit-container">
+								<button type="submit">SUBMIT</button>
+							</div>
 							
 							
 							<h6 id="notice"> Important information </h6>
 							<p> This form is intended for general enquiries and consultation requests. It does not provide medical diagnosis or guarantee an appointment with a healthcare professional. For medical concerns, contact your GP or an appropriate healthcare service. </p>
 						</form>
+						
 					</div>
 				</div>
 				<!-- Hotlines and websites if needed -->
