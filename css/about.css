@@ -1,8 +1,13 @@
+
 /*about.CSS */
- /* Makes the hero fill the screen below
-       the navigation bar */
-	   
-	   /* Main section */
+
+/* NAVI BAR*/
+
+
+/* =======================
+   SECTION 1: OUR WHY
+======================= */
+
 .page-about .why-section {
     background-color: var(--primary-color);
     min-height: 100vh;
@@ -10,21 +15,27 @@
     align-items: center;
 }
 
-/* Styles the main hero heading */
 .page-about .why-section h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: 700;
-	align-items: left;
-	padding: 50px;
-	color: var(--white)
+    color: var(--white);
+    margin-bottom: 25px;
 }
+
 .page-about .why-section p {
-	font-family: 'Manrope', sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1rem;
     line-height: 1.7;
     color: var(--white);
-    margin-bottom: 50px;
-	margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.page-about .why-left {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* PUTS IT AT THE START OF THE CONTAINER */
+    text-align: left;
+    padding: 50px;
 }
 
 .page-about .why-right {
@@ -33,23 +44,336 @@
     align-items: center;
 }
 
+.page-about .why-right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
 
-.page-about .why-left{ 	/* Left text column */
-	display: flex;
-	align-items: center;	
+/* OUR WHY BUTTONS */
+
+.page-about .why-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.page-about .why-buttons a {
+    background-color: var(--white);
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.4s ease;
+}
+
+.page-about .why-buttons a:hover {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+
+/* =======================
+   POPOUT HEADING
+======================= */
+
+.page-about .Pop-Out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.page-about .Pop-Out h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+/* =======================
+   SECTION 2: ONE SMALL STEP
+======================= */
+
+.page-about .small-step-section {
+    background-color: var(--background-color);
+    padding: 80px 0;
+}
+
+.page-about .stepleft {
+    padding: 30px;
+}
+
+.page-about .stepleft h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.page-about .stepleft p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--primary-color);
+}
+
+/* RIPPLE CIRCLES */
+
+.page-about .ripple-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.page-about .ripple-circle {
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* leaves it where it based on where all the other items are */
+}
+
+
+.page-about .ripple-circle::before,
+.page-about .ripple-circle::after {
+    content: "";
+    position: absolute;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+}
+
+.page-about .ripple-circle::before {
+    width: 320px;
+    height: 320px;
+}
+
+.page-about .ripple-circle::after {
+    width: 390px;
+    height: 390px;
+}
+
+.page-about .ripple-message {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =======================
+    RIPPLE BUTTON (i got this from reddit but dk how it works so i commented out the stuff we havent gone through or that i really dont know 
+    ======================= */
+
+.page-about .button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.page-about .ripple-button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*
+.page-about .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+/*
+
+/* =======================
+   SECTION 2.5: THE VISION
+======================= */
+
+.page-about .mission-selection {
+    background-color: var(--secondary-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.page-about .mission-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+	padding: 100px;
+	transform: scale(1.3);
+}
+
+.page-about .mission-img img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.page-about .mission-text {
+    padding: 40px 50px;
     text-align: left;
-    padding: 50px;
+}
+
+.page-about .mission-text h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.page-about .mission-text p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--primary-color);
+    margin-bottom: 0;
 }
 
 
-.page-about .why-section img {
-	width: 100%;
-	height: auto;
-	display: block;
-	align-content: center;
+/* =======================
+   SECTION 3: WHO WE ARE
+======================= */
+
+.page-about .team-section {
+    background-color: var(--background-color);
+	padding: 50px;
+	min-height: 100vh;
+
+
 }
 
+/* Heading */
 
+.page-about .team-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-about .team-heading h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.page-about .team-heading p {
+    font-family: 'Manrope', sans-serif;
+    color: var(--primary-color);
+}
+
+/* Team cards */
+
+.page-about .team-card {
+    background-color: var(--white);
+    padding: 20px;
 	
 
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
+}
+
+.page-about .team-card:hover {
+    transform: translateY(-8px);
 	
+}
+
+/* Profile images */
+
+.page-about .team-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.page-about .team-card h3 {
+    font-family: 'Lato', sans-serif;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.page-about .team-card p {
+    font-family: 'Manrope', sans-serif;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* =======================
+   RESPONSIVE DESIGN doesnt feel theres evena  point on this but 
+======================= */
+
+@media (max-width: 768px) {
+
+    .page-about .why-left {
+        padding: 25px;
+    }
+
+    .page-about .why-right {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .page-about .mission-selection {
+        padding: 50px 0;
+    }
+
+    .page-about .mission-img {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .page-about .mission-text {
+        padding: 20px;
+    }
+
+    .page-about .mission-text h2 {
+        font-size: 2rem;
+    }
+
+    .page-about .ripple-visual {
+        min-height: 350px;
+    }
+}
