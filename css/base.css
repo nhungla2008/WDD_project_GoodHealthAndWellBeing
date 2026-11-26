@@ -7,6 +7,7 @@
 /* 
 this is the foundation css for every webpage 
 */
+/* kacper did most of the base css and yall know that dont even try to refute me */
 
 /* ROOT DECLARES THE GLOBAL VARIABLE fyi*/
 /* VAR = VARIABLE WHICH REFERENCES WHICHEVER GLOBAL VARIABLE */
@@ -34,7 +35,6 @@ this is the foundation css for every webpage
     --background-color: #F5F0E6;
     --white: #FFFFFF;
     --light-grey: #D9D9D9;
-}
 
 body {
     background-color: var(--background-color);
@@ -67,9 +67,76 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =================================
-   4. GLOBAL NAVIGATION -> DOESNT NEED TO MUCH WORK CUZ WE BOOTSRTAP!!1
+   4. GLOBAL NAVIGATION -> DOESNT NEED TO MUUCH WORK CUZ WE BOOTSRTAP!!1
 ================================= */
 
+
+.navbar {
+    background-color: var(--white) !important /* this is override if anyone has put another color for the navbar */;
+    padding: 15px 4%; /* percentages adjust automatically depending on the browser width which is cool */
+    min-height: 75px;
+}
+
+/* Website logo */
+
+.navbar-brand {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-right: 35px;
+}
+
+/* Navigation links */
+
+.navbar-nav {
+    gap: 12px;
+}
+
+.navbar .nav-link {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-color);
+    padding: 10px 14px !important;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+
+.navbar .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Active page */
+
+.navbar .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Dropdown menu */
+
+.navbar .dropdown-menu {
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown-item {
+    font-family: 'Manrope', sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+.navbar .btn-outline-success {  /* "<button class="btn btn-outline-success" type="submit"> <i class="bi bi-search-heart"></i>   </button> " use this for the button around line 69 because -> it is boostrap icon which i svery good for icons muc hbetter than words */
+    border-color: white; /* changes the colour of the outlines because it looked to tight and ugly */
+	padding: 2%; 
+}
+}
 
 /* =================================
    5. GLOBAL BUTTONS 
@@ -79,6 +146,74 @@ h1, h2, h3, h4, h5, h6 {
    6. GLOBAL FOOTER
 ================================= */
 
+.site-footer {
+	background-color: var(--primary-color);
+	color: var(--white);
+	padding: 60px 0 25px; 
+
+}
+
+/* Footer columns */
+
+.site-footer .footer-content {
+    row-gap: 35px;
+}
+
+.site-footer .footer-column {
+    padding: 0 25px;
+}
+
+.site-footer h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+    color: var(--accent-color);
+}
+
+.site-footer p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: var(--white);
+}
+
+.site-footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* Divider */
+
+.site-footer hr {
+    border-color: var(--white);
+    opacity: 0.3;
+    margin: 40px 0 25px;
+}
+
+/* Bottom footer */
+
+.site-footer .footer-bottom {
+    text-align: center;
+}
+
+.site-footer .footer-bottom p {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+.site-footer .copyright {
+    opacity: 0.75;
+}
+
 /* =================================
    7. GLOBAL GENERAL SPACING 
 ================================= */
@@ -86,4 +221,4 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =================================
    8. GLOBAL CONTAINERS THAT CAN BE REUSED AWEOSMLY.
-================================ */
+================================= */

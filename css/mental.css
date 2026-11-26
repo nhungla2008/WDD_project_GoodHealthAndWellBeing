@@ -1,6 +1,6 @@
 /* kacper css */
 
-
+/* NEED TO FIX NAV BAR */
 /* =================================
    1. HERO SECTION OF COOLNESS
 ================================= */
@@ -39,7 +39,7 @@
 ================================= */
 
 .page-mental .mental-intro {
-    background-color: var(--primary-color);
+    background-color: -var(--primary-color);
     padding: 120px 0;
     min-height: calc(100vh);
 
@@ -454,13 +454,13 @@ font-family: 'Lato', sans-serif;
 
 .page-mental .cta-secondary {
     background-color: transparent;
-    color: #FFFFFF;
+    color: Black;
     border: 2px solid #FFFFFF;
 }
 
 .page-mental .cta-secondary:hover {
     background-color: var(--mental-accent);
-    color: var(--text-color);
+    color: white;
     transform: translateY(-3px);
 }
 /* =================================
@@ -496,6 +496,20 @@ font-family: 'Lato', sans-serif;
     margin-bottom: 0;
 }
 
+/* other thing for nav bar button */
+.navbar .dropdown-item:hover {
+    background-color: var(--mental-accent) !important;
+    color: var(--mental-accent);
+}
+.navbar .btn-outline-success {  /* "<button class="btn btn-outline-success" type="submit"> <i class="bi bi-search-heart"></i>   </button> " use this for the button around line 69 because -> it is boostrap icon which i svery good for icons muc hbetter than words */
+    border-color: var(--mental-accent) !important; /* changes the colour of the outlines because it looked to tight and ugly */
+	padding: 2%; 
+}
+.navbar .btn-outline-success:hover {
+    background-color: var(--mental-accent);
+    color: white;
+    border-color: white;
+}
 /* =================================
    7. WE'LL FIGURE THIS OUT LATER, PROLLY GON BE THE RESPONSIVE PART.
 ================================= */
