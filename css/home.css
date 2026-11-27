@@ -3,12 +3,16 @@
     margin: 0 auto;          
     padding: 20px 32px;
 }
-.heading {
+.welcoming {
     position: relative;
     width: 100%;
     height: 85vh; 
     overflow: hidden;
     margin-bottom: 3rem;
+	display: flex;
+	align-items: flex-end;     /* Đẩy nội dung xuống phía dưới */
+    justify-content: flex-end;   /* Đẩy nội dung sang bên phải */
+    padding: 0 5% 350px 5%;
 }
 #welcome_pic{
 	position: absolute;
@@ -17,7 +21,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover; /* Cắt ảnh thông minh để tràn kín khung mà không bị méo */
-    filter: brightness(0.6); /* Làm tối ảnh một chút để chữ trắng dễ đọc */
+    filter: brightness(0.6); 
     z-index: 1;
 }
 .hero-content {
@@ -28,41 +32,62 @@
     padding: 0 20px;
 	text-align: center;
 }
-.heading h1,
-.heading h5 {
-  position: absolute;
-  left: 50%;
-  width: 90%;
-  max-width: 800px;
-  text-align: center;
-  color: #ffffff;
-  z-index: 2;
-  margin: 0;
-}
 
-.heading h1 {
+.welcoming h2 {
   top: 48px; /* Khoảng cách từ mép trên banner xuống tiêu đề */
 }
 
-.heading h5 {
+.welcoming h5 {
   top: 105px; /* Nằm ngay dưới h1, vẫn ở phần trống phía trên */
   line-height: 1.5;
 }
-#section1, #section2 {
+.awareness {
+    width: 100%;
+    background-color: var(--secondary-color); 
+    padding: 36px 0;
+    margin-bottom: 24px;
+	color: white;
+}
+#section1{
+	margin-bottom: 80px;
+}
+#section2{
+	margin-bottom: 30px;
+}
+.section-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 4rem;
+    gap: 5rem;
 }
-#section2 {
-    flex-direction: row-reverse;
+.section-inner .text-content {
+    flex: 1;
+}
+.section-inner img {
+    width: 42%;
+    max-width: 480px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-#section1 img, #section2 img {
-    width: 40%;
-    height: auto;
-    border-radius: 8px;
+@media (max-width: 768px) {
+    .section-inner {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    #section2 .section-inner {
+        flex-direction: column-reverse; /* Giữ chữ ở trên, ảnh ở dưới trên mobile nếu muốn */
+    }
+
+    .section-inner img {
+        width: 100%;
+        height: 220px;
+    }
 }
 #section4 {
     display: grid;
@@ -105,17 +130,23 @@
     margin: 1rem 0;
 }
 @media (max-width: 768px) {
-    #section1, #section2 {
-        flex-direction: column;
-    }
-    #section1 img, #section2 img {
-        width: 100%;
-    }
     #section4, #section6 {
-        grid-template-columns: 1fr; /* Xếp dọc thành 1 cột trên điện thoại */
+        grid-template-columns: 1fr; /* one column on mobile phone */
     }
 }
 .pictures{
 	width: 80%;
     height: 80%;
+}
+#intro{
+	text-align: center;
+	padding: 0 0 100px;
+	margin: 30px 100px 20px 100px;
+}
+.heading{
+	text-align: center;
+	padding: 130px 0 130px;
+}
+#section1,#section2{
+	background-color: var(--secondary-color);
 }
