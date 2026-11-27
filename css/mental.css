@@ -39,7 +39,7 @@
 ================================= */
 
 .page-mental .mental-intro {
-    background-color: -var(--primary-color);
+    background-color: -var(--accent-color);
     padding: 120px 0;
     min-height: calc(100vh);
 
@@ -52,7 +52,7 @@
     font-weight: 700;
     line-height: 1.15;
     margin: 25px;
-	white-space: nowrap;
+	white-space: wrap;
 }
 
 /* Right column paragraph */
